@@ -5,6 +5,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatTooltip, MatTooltipModule } from '@angular/material/tooltip';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -31,6 +32,7 @@ import { TrashcanComponent } from './view/trashcan/trashcan.component';
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
+    MatTooltipModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
