@@ -39,7 +39,7 @@ export class DashboardComponent implements OnInit {
   getContent(){
     this.apiService.getData().subscribe(response => {
       this.list = response;
-      console.log("chiamata", this.list)
+      console.log("chiamata", this.list);
     });;
   }
 }
