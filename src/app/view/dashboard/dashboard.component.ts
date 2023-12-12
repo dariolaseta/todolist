@@ -16,10 +16,7 @@ export class DashboardComponent implements OnInit {
   constructor(private apiService: ApiService) { }
 
   ngOnInit(): void {
-    this.apiService.getData().subscribe(response => {
-      this.list = response;
-      console.log(this.list)
-    });;
+    this.getContent();
   }
 
   addItem(){
@@ -30,9 +27,19 @@ export class DashboardComponent implements OnInit {
       const data = {
         id: this.id,
         content: this.item,
+        checked: false,
       };
 
       this.apiService.addItem(data);
+      this.getContent(); //TODO: fix update when add new items
     }
+    
+  }
+
+  getContent(){
+    this.apiService.getData().subscribe(response => {
+      this.list = response;
+      console.log("chiamata", this.list)
+    });;
   }
 }

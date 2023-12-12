@@ -2,15 +2,13 @@
   "posts": [
     {
       "id": 1,
-      "content": "Comprare lettiera"
+      "content": "Comprare lettiera",
+      "checked": false
     },
     {
       "id": 2,
-      "content": "Leggere documentazione"
-    },
-    {
-      "id": 3,
-      "content": "dfgdfg"
+      "content": "Leggere documentazione",
+      "checked": true
     }
   ],
   "comments": [
