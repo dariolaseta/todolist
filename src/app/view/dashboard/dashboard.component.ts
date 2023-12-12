@@ -8,10 +8,12 @@ import { ApiService } from 'src/app/services/api.service';
 })
 export class DashboardComponent implements OnInit {
 
+  list: any[] = [];
+
   constructor(private apiService: ApiService) { }
 
   ngOnInit(): void {
-    this.apiService.getData();
+    this.apiService.getData(this.list);
   }
 
 }
