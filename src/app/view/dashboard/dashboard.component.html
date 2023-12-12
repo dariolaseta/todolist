@@ -8,10 +8,10 @@
             <button mat-raised-button color="primary" class="mx-3">Aggiungi</button>
         </div>
         
-        <div class="container mx-auto">
-            <ul *ngFor="let data of list">
+        <div>
+            <ul *ngFor="let data of list" class="flex justify-between">
                 <mat-checkbox>
-                    <li class="px-5">{{ data.content }}</li>
+                    <li>{{ data.content }}</li>
                 </mat-checkbox>
                 <button mat-raised-button color="warn">Elimina</button>
             </ul>
