@@ -23,7 +23,7 @@ export class DashboardComponent implements OnInit {
     this.id = this.list.length;
     ++this.id;
 
-    if(this.item !== ''){
+    if(this.item.replace(/\s/g, '').length){
       const data = {
         id: this.id,
         content: this.item,
@@ -40,6 +40,7 @@ export class DashboardComponent implements OnInit {
     this.apiService.getData().subscribe(response => {
       this.list = response;
       console.log("chiamata", this.list);
-    });;
+    });
   }
+  
 }
