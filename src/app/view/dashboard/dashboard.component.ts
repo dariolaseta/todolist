@@ -13,7 +13,10 @@ export class DashboardComponent implements OnInit {
   constructor(private apiService: ApiService) { }
 
   ngOnInit(): void {
-    this.apiService.getData(this.list);
+    this.apiService.getData().subscribe(response => {
+      this.list = response;
+      console.log(this.list)
+    });;
   }
 
 }

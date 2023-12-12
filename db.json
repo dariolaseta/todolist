@@ -2,8 +2,11 @@
   "posts": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "content": "Comprare lettiera"
+    },
+    {
+      "id": 2,
+      "content": "Leggere documentazione"
     }
   ],
   "comments": [

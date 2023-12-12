@@ -8,5 +8,10 @@
             <button mat-raised-button color="primary" class="mx-3">Aggiungi</button>
         </div>
         
+        <div class="container mx-auto">
+            <ul *ngFor="let data of list">
+                <li>{{ data.content }}</li>
+            </ul>
+        </div>
     </mat-card>
 </div>

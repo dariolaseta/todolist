@@ -14,11 +14,8 @@ export class ApiService {
     private http: HttpClient,
     ) { }
 
-  getData(array: any[]) {
-    return this.http.get<any>(this.apiUrl).subscribe(response => {
-      array = response;
-      console.log(array)
-    });
+  getData() {
+    return this.http.get<any>(this.apiUrl);
   }
 
   addItem(body: any) :void {
