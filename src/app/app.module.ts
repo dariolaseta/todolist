@@ -8,12 +8,16 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DashboardComponent } from './view/dashboard/dashboard.component';
 import { HeaderComponent } from './components/header/header.component';
+import { ListComponent } from './view/list/list.component';
+import { TrashcanComponent } from './view/trashcan/trashcan.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
-    HeaderComponent
+    HeaderComponent,
+    ListComponent,
+    TrashcanComponent
   ],
   imports: [
     BrowserModule,
