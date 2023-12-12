@@ -3,7 +3,7 @@
         <div class="flex justify-center items-center">
             <mat-form-field class="flex justify-center items-center">
                 <mat-label>Aggiungi task</mat-label>
-                <input matInput>
+                <input matInput [(ngModel)]="item" (keyup.enter)="addItem()">
             </mat-form-field>
             <button mat-raised-button color="primary" class="mx-3">Aggiungi</button>
         </div>

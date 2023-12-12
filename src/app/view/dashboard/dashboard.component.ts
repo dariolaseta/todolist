@@ -10,6 +10,9 @@ export class DashboardComponent implements OnInit {
 
   list: any[] = [];
 
+  item: string = '';
+  id!: number;
+
   constructor(private apiService: ApiService) { }
 
   ngOnInit(): void {
@@ -19,4 +22,17 @@ export class DashboardComponent implements OnInit {
     });;
   }
 
+  addItem(){
+    this.id = this.list.length;
+    ++this.id;
+
+    if(this.item !== ''){
+      const data = {
+        id: this.id,
+        content: this.item,
+      };
+
+      this.apiService.addItem(data);
+    }
+  }
 }
