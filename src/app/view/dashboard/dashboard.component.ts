@@ -66,7 +66,7 @@ export class DashboardComponent implements OnInit {
       
       );
     dialogRef.afterClosed().subscribe(res => {
-      console.log(res)
+      this.getContent();
     })
   }
 }

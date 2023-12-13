@@ -3,14 +3,14 @@
     
     <div mat-dialog-content>
         <mat-form-field>
-            <input matInput placeholder="Task" [value]="data.dataContent">
+            <input matInput placeholder="Task" [value]="data.dataContent" [(ngModel)]="data.dataContent" (keyup.enter)="save()">
         </mat-form-field>
     </div>
 
     <div mat-dialog-actions class="flex justify-center align">
         <div>
-            <button mat-button color="warn">Annulla</button>
-            <button mat-button color="primary">Aggiorna</button>
+            <button mat-button color="warn" (click)="close()">Annulla</button>
+            <button mat-button color="primary" (click)="save()">Aggiorna</button>
         </div>
     </div>
 </div>
