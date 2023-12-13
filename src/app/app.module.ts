@@ -19,6 +19,7 @@ import { DashboardComponent } from './view/dashboard/dashboard.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ListComponent } from './view/list/list.component';
 import { TrashcanComponent } from './view/trashcan/trashcan.component';
+import { DeletePopupComponent } from './components/popup/delete-popup/delete-popup.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { TrashcanComponent } from './view/trashcan/trashcan.component';
     DashboardComponent,
     HeaderComponent,
     ListComponent,
-    TrashcanComponent
+    TrashcanComponent,
+    DeletePopupComponent
   ],
   imports: [
     BrowserModule,
