@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ApiService } from 'src/app/services/api.service';
 import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { DeletePopupComponent } from 'src/app/components/popup/delete-popup/delete-popup.component';
+import { EditPopupComponent } from 'src/app/components/popup/edit-popup/edit-popup.component';
 
 @Component({
   selector: 'app-dashboard',
@@ -55,5 +56,17 @@ export class DashboardComponent implements OnInit {
       })
   }
 
-  
+  edit(id: number, item: string){
+    const dialogRef = this.dialog.open(EditPopupComponent, {
+      data: {
+        dataId: id,
+        dataContent: item
+      }
+    }
+      
+      );
+    dialogRef.afterClosed().subscribe(res => {
+      console.log(res)
+    })
+  }
 }

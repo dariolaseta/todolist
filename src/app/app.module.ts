@@ -21,6 +21,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { ListComponent } from './view/list/list.component';
 import { TrashcanComponent } from './view/trashcan/trashcan.component';
 import { DeletePopupComponent } from './components/popup/delete-popup/delete-popup.component';
+import { EditPopupComponent } from './components/popup/edit-popup/edit-popup.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { DeletePopupComponent } from './components/popup/delete-popup/delete-pop
     HeaderComponent,
     ListComponent,
     TrashcanComponent,
-    DeletePopupComponent
+    DeletePopupComponent,
+    EditPopupComponent
   ],
   imports: [
     BrowserModule,

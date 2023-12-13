@@ -13,10 +13,10 @@
                 <mat-checkbox [checked]="data.checked" color="primary">
                     <li>{{ data.content }}</li>
                 </mat-checkbox>
-                <div class="my_buttons">
-                    <button mat-button><i class="material-icons text-amber-400">edit</i></button>
-                    <button mat-button color="warn" (click)="openDelete(data.id)"><i class="material-icons">delete_outline</i></button>
 
+                <div class="my_buttons">
+                    <button mat-button (click)="edit(data.id, data.content)"><i class="material-icons text-amber-400">edit</i></button>
+                    <button mat-button color="warn" (click)="openDelete(data.id)"><i class="material-icons">delete_outline</i></button>
                 </div>
             </ul>
         </div>
