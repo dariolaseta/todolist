@@ -45,7 +45,7 @@ export class DashboardComponent implements OnInit {
   
   openDelete(id: number){
     const dialogRef = this.dialog.open(DeletePopupComponent,
-      {data: id}
+      { data: id }
       );
       
       dialogRef.afterClosed().subscribe(result => {

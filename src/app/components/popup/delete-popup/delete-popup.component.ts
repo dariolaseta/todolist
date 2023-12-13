@@ -24,4 +24,8 @@ export class DeletePopupComponent implements OnInit {
     this.dialogRef.close();
   }
 
+  closePopup(){
+    this.dialogRef.close();
+  }
+
 }
