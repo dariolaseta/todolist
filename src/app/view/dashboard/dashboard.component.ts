@@ -54,4 +54,6 @@ export class DashboardComponent implements OnInit {
         this.getContent();
       })
   }
+
+  
 }

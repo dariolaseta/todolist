@@ -20,7 +20,7 @@ export class DeletePopupComponent implements OnInit {
   }
 
   delete(){
-    this.apiService.deleteCharacter(this.data);
+    this.apiService.deleteItem(this.data);
     this.dialogRef.close();
   }
 

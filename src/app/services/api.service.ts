@@ -22,7 +22,7 @@ export class ApiService {
     return this.http.post(this.apiUrl, body, {headers: this.headers});
   }
 
-  deleteCharacter(id: number) :void {
+  deleteItem(id: number) :void {
     this.http.delete(this.apiUrl + id, {headers: this.headers}).subscribe(
       response => {
         console.log(response);
@@ -30,7 +30,7 @@ export class ApiService {
     )
   }
 
-  checked(body: any, id: number){
+  editItem(body: any, id: number){
     this.http.patch(this.apiUrl + id, body, {headers: this.headers}).subscribe(response => {
       console.log(response);
     })
