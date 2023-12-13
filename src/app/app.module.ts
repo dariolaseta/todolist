@@ -11,6 +11,7 @@ import { MatTooltip, MatTooltipModule } from '@angular/material/tooltip';
 import { MatButton, MatButtonModule } from '@angular/material/button';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatIconModule } from '@angular/material/icon';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -45,6 +46,7 @@ import { DeletePopupComponent } from './components/popup/delete-popup/delete-pop
     MatButtonModule,
     MatCheckboxModule,
     MatDialogModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
