@@ -11,7 +11,6 @@ export class DashboardComponent implements OnInit {
   list: any[] = [];
 
   item: string = '';
-  id!: number;
 
   constructor(private apiService: ApiService) { }
 
@@ -20,18 +19,14 @@ export class DashboardComponent implements OnInit {
   }
 
   addItem(){
-    this.id = this.list.length;
-    ++this.id;
 
     if(this.item.replace(/\s/g, '').length){
       const data = {
-        id: this.id,
         content: this.item,
         checked: false,
       };
 
       this.apiService.addItem(data);
-      this.getContent(); //TODO: fix update when add new items
     }
     
   }
@@ -41,6 +36,10 @@ export class DashboardComponent implements OnInit {
       this.list = response;
       console.log("chiamata", this.list);
     });
+  }
+
+  delete(id: number){
+    this.apiService.deleteCharacter(id);
   }
   
 }

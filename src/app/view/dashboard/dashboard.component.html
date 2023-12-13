@@ -13,7 +13,7 @@
                 <mat-checkbox [checked]="data.checked" color="primary">
                     <li>{{ data.content }}</li>
                 </mat-checkbox>
-                <button mat-raised-button color="warn">Elimina</button>
+                <button mat-raised-button color="warn" (click)="delete(data.id)">Elimina</button>
             </ul>
         </div>
     </mat-card>

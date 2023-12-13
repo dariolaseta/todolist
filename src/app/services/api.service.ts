@@ -25,4 +25,12 @@ export class ApiService {
       }
     );
   }
+
+  deleteCharacter(id: number) :void {
+    this.http.delete(this.apiUrl + id, {headers: this.headers}).subscribe(
+      response => {
+        console.log(response);
+      }
+    )
+  }
 }
