@@ -24,7 +24,6 @@ export class DashboardComponent implements OnInit {
   }
 
   addItem(){
-
     if(this.item.replace(/\s/g, '').length){
       const data = {
         content: this.item,
@@ -32,6 +31,7 @@ export class DashboardComponent implements OnInit {
       };
 
       this.apiService.addItem(data);
+      this.item = '';
     }
     
   }
