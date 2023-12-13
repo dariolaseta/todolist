@@ -1,12 +1,14 @@
 <div>
-    <h1 mat-dialog-title class="text-red-600">ATTENZIONE</h1>
+    <h1 mat-dialog-title class="text-red-600 text-center">ATTENZIONE</h1>
     
     <div mat-dialog-content>
         Sei sicuro di voler procedere con l'eliminazione?
     </div>
 
-    <div mat-dialog-actions>
-        <button mat-button color="warn" (click)="delete()">Elimina</button>
-        <button mat-button color="primary" (click)="closePopup()">Annulla</button>
+    <div mat-dialog-actions class="flex justify-center align">
+        <div>
+            <button mat-button color="warn" (click)="delete()">Elimina</button>
+            <button mat-button color="primary" (click)="closePopup()">Annulla</button>
+        </div>
     </div>
 </div>
