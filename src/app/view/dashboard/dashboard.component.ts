@@ -77,7 +77,7 @@ export class DashboardComponent implements OnInit {
     }
 
     this.apiService.editItem(data, id).subscribe(() =>{
-      this.getContent()
+      this.getContent();
     });
   }
 }
