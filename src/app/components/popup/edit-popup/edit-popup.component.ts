@@ -26,7 +26,7 @@ export class EditPopupComponent implements OnInit {
       id: this.data.dataId
     }
 
-    this.apiService.editItem(data, this.data.dataId);
+    this.apiService.editItem(data, this.data.dataId).subscribe();
 
     this.dialogRef.close();
   }

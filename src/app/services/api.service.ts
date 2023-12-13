@@ -31,8 +31,6 @@ export class ApiService {
   }
 
   editItem(body: any, id: number){
-    this.http.patch(this.apiUrl + id, body, {headers: this.headers}).subscribe(response => {
-      console.log(response);
-    })
+    return this.http.patch(this.apiUrl + id, body, {headers: this.headers});
   }
 }

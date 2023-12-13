@@ -69,4 +69,15 @@ export class DashboardComponent implements OnInit {
       this.getContent();
     })
   }
+
+  check(id: number){
+    const data = {
+      id: id,
+      checked: !this.list[id - 1].checked
+    }
+
+    this.apiService.editItem(data, id).subscribe(() =>{
+      this.getContent()
+    });
+  }
 }
