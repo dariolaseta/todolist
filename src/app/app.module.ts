@@ -22,6 +22,7 @@ import { ListComponent } from './view/list/list.component';
 import { TrashcanComponent } from './view/trashcan/trashcan.component';
 import { DeletePopupComponent } from './components/popup/delete-popup/delete-popup.component';
 import { EditPopupComponent } from './components/popup/edit-popup/edit-popup.component';
+import { ErrorComponent } from './view/error/error.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { EditPopupComponent } from './components/popup/edit-popup/edit-popup.com
     ListComponent,
     TrashcanComponent,
     DeletePopupComponent,
-    EditPopupComponent
+    EditPopupComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
