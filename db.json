@@ -3,7 +3,7 @@
     {
       "id": 1,
       "content": "Comprare lettiera",
-      "checked": false
+      "checked": true
     },
     {
       "id": 2,
@@ -12,7 +12,7 @@
     },
     {
       "content": "Cambiare lettore dvd",
-      "checked": false,
+      "checked": true,
       "id": 3
     }
   ],

@@ -51,7 +51,7 @@ export class DashboardComponent implements OnInit {
       { data: id }
       );
       
-      dialogRef.afterClosed().subscribe(result => {
+      dialogRef.afterClosed().subscribe(() => {
         this.getContent();
       })
   }
@@ -65,7 +65,7 @@ export class DashboardComponent implements OnInit {
     }
       
       );
-    dialogRef.afterClosed().subscribe(res => {
+    dialogRef.afterClosed().subscribe(() => {
       this.getContent();
     })
   }
