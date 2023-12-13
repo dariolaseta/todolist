@@ -18,12 +18,8 @@ export class ApiService {
     return this.http.get<any>(this.apiUrl);
   }
 
-  addItem(body: any) :void {
-    this.http.post(this.apiUrl, body, {headers: this.headers}).subscribe(
-      response => {
-        console.log(response);
-      }
-    );
+  addItem(body: any) {
+    return this.http.post(this.apiUrl, body, {headers: this.headers});
   }
 
   deleteCharacter(id: number) :void {

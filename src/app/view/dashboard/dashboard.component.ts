@@ -30,8 +30,11 @@ export class DashboardComponent implements OnInit {
         checked: false,
       };
 
-      this.apiService.addItem(data);
-      this.item = '';
+      this.apiService.addItem(data).subscribe(() => {
+        this.item = '';
+
+        this.getContent();
+      });
     }
     
   }
@@ -39,7 +42,6 @@ export class DashboardComponent implements OnInit {
   getContent(){
     this.apiService.getData().subscribe(response => {
       this.list = response;
-      console.log("chiamata", this.list);
     });
   }
   
