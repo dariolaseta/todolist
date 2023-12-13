@@ -29,4 +29,10 @@ export class ApiService {
       }
     )
   }
+
+  checked(body: any, id: number){
+    this.http.patch(this.apiUrl + id, body, {headers: this.headers}).subscribe(response => {
+      console.log(response);
+    })
+  }
 }
