@@ -3,17 +3,22 @@
     {
       "id": 1,
       "content": "Comprare lettiera",
-      "checked": true
+      "checked": false
     },
     {
       "id": 2,
       "content": "Leggere documentazione",
-      "checked": false
+      "checked": true
     },
     {
       "content": "Cambiare lettore dvd",
       "checked": true,
       "id": 3
+    },
+    {
+      "content": "Pulire camera",
+      "checked": false,
+      "id": 4
     }
   ],
   "comments": [
